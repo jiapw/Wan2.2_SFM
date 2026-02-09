@@ -1,0 +1,15 @@
+ckpt_dir: /path/to/Wan2.2-T2V-A14B
+scene_image_dir: /data/scene/images
+colmap_cameras_txt: /data/scene/sparse_txt/cameras.txt
+colmap_images_txt: /data/scene/sparse_txt/images.txt
+prompt: "A realistic fly-through of a modern living room"
+out_dir: ./outputs/scene_lora
+size: "832*480"
+
+epochs: 12
+batch_size: 1
+lr_lora: 0.0001
+lr_camera: 0.0001
+lora_rank: 16
+lora_alpha: 16
+cam_mode: both
